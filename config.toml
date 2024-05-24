@@ -8,4 +8,4 @@ GROQ = "" # Groq API key - gsk_1234567890abcdef1234567890abcdef
 
 [API_ENDPOINTS]
 SEARXNG = "http://localhost:32768" # SearxNG API URL
-OLLAMA = "localhost:11434" # Ollama API URL - http://host.docker.internal:11434
+OLLAMA = "http://localhost:11434" # Ollama API URL - http://host.docker.internal:11434
