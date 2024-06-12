@@ -1,5 +1,8 @@
 FROM node:buster-slim
 
+# Install yarn
+RUN apt-get update && apt-get install -y yarn
+
 ARG SEARXNG_API_URL
 
 WORKDIR /home/perplexica
