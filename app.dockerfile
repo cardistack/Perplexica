@@ -8,11 +8,8 @@ ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
 # Install yarn
 RUN apk add --no-cache yarn
 
-WORKDIR /home/perplexica
-
-COPY ui /home/perplexica/
-
+WORKDIR /app
+COPY ui /app/
 RUN yarn install
 RUN yarn build
-
 CMD ["yarn", "start"]
